@@ -1,0 +1,175 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Lint Royal Cleaning Crew",
+			"type": "shell",
+			"command": "npm.cmd",
+			"args": [
+				"run",
+				"lint"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$eslint-stylish"
+			]
+		},
+		{
+			"label": "Build Royal Cleaning Crew",
+			"type": "shell",
+			"command": "npm.cmd",
+			"args": [
+				"run",
+				"build"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			]
+		},
+		{
+			"label": "Preview Royal Cleaning Crew",
+			"type": "shell",
+			"command": "npm.cmd",
+			"args": [
+				"run",
+				"dev",
+				"--",
+				"--hostname",
+				"127.0.0.1",
+				"--port",
+				"3000"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Production Preview Royal Cleaning Crew",
+			"type": "shell",
+			"command": "npm.cmd",
+			"args": [
+				"run",
+				"start",
+				"--",
+				"--hostname",
+				"127.0.0.1",
+				"--port",
+				"3001"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Production Preview Final",
+			"type": "shell",
+			"command": "npm.cmd",
+			"args": [
+				"run",
+				"start",
+				"--",
+				"--hostname",
+				"127.0.0.1",
+				"--port",
+				"3002"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Royal Cleaning Crew Final Preview",
+			"type": "shell",
+			"command": "npm.cmd",
+			"args": [
+				"run",
+				"start",
+				"--",
+				"--hostname",
+				"127.0.0.1",
+				"--port",
+				"3003"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Royal Cleaning Crew Preview",
+			"type": "shell",
+			"command": "npm.cmd",
+			"args": [
+				"run",
+				"start",
+				"--",
+				"--hostname",
+				"127.0.0.1",
+				"--port",
+				"3004"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Royal Cleaning Crew Final Live Preview",
+			"type": "shell",
+			"command": "npm.cmd",
+			"args": [
+				"run",
+				"start",
+				"--",
+				"--hostname",
+				"127.0.0.1",
+				"--port",
+				"3005"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Royal Cleaning Crew Release Preview",
+			"type": "shell",
+			"command": "npm.cmd",
+			"args": [
+				"run",
+				"start",
+				"--",
+				"--hostname",
+				"127.0.0.1",
+				"--port",
+				"3006"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Royal Cleaning Crew Polish Preview",
+			"type": "shell",
+			"command": "npm.cmd",
+			"args": [
+				"run",
+				"start",
+				"--",
+				"--hostname",
+				"127.0.0.1",
+				"--port",
+				"3007"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Quote Email Release Preview",
+			"type": "shell",
+			"command": "npm.cmd",
+			"args": [
+				"run",
+				"start",
+				"--",
+				"--hostname",
+				"127.0.0.1",
+				"--port",
+				"3008"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}
