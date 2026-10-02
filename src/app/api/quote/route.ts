@@ -61,19 +61,19 @@ function buildQuoteEmail(quote: QuoteSubmission) {
 
   const rows = fields.map(([label, value]) => `
     <tr>
-      <th align="left" style="padding:10px 14px;border-bottom:1px solid #e6e3dc;color:#6a6e68;font:600 12px Arial,sans-serif;vertical-align:top;">${escapeHtml(label)}</th>
-      <td style="padding:10px 14px;border-bottom:1px solid #e6e3dc;color:#1c201d;font:14px Arial,sans-serif;white-space:pre-wrap;">${escapeHtml(value)}</td>
+      <th align="left" style="padding:10px 14px;border-bottom:1px solid #cfdaeb;color:#52698f;font:600 12px Arial,sans-serif;vertical-align:top;">${escapeHtml(label)}</th>
+      <td style="padding:10px 14px;border-bottom:1px solid #cfdaeb;color:#0a2d70;font:14px Arial,sans-serif;white-space:pre-wrap;">${escapeHtml(value)}</td>
     </tr>`).join("");
 
   const html = `
-    <div style="margin:0 auto;max-width:680px;padding:28px 18px;background:#f5f3ee;color:#1c201d;font-family:Arial,sans-serif;">
-      <div style="padding:24px;background:#222724;color:#fffefa;">
-        <p style="margin:0 0 10px;color:#d7bd89;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Royal Cleaning Crew · Calgary</p>
+    <div style="margin:0 auto;max-width:680px;padding:28px 18px;background:#f5f8fd;color:#0a2d70;font-family:Arial,sans-serif;">
+      <div style="padding:24px;background:#082a6d;color:#ffffff;">
+        <p style="margin:0 0 10px;color:#f0bd45;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Royal Cleaning Crew · Calgary</p>
         <h1 style="margin:0;font-family:Arial,sans-serif;font-size:26px;font-weight:600;">New quote request</h1>
-        <p style="margin:10px 0 0;color:#d4d6d1;font-size:13px;">${escapeHtml(fullName)} · ${escapeHtml(quote.service)}</p>
+        <p style="margin:10px 0 0;color:#e0e9f8;font-size:13px;">${escapeHtml(fullName)} · ${escapeHtml(quote.service)}</p>
       </div>
-      <table role="presentation" style="width:100%;margin-top:14px;border-collapse:collapse;background:#fffefa;">${rows}</table>
-      <p style="margin:16px 2px 0;color:#6a6e68;font-size:11px;line-height:1.6;">The website estimate is indicative only. Confirm property condition, scope, final pricing and availability before booking.</p>
+      <table role="presentation" style="width:100%;margin-top:14px;border-collapse:collapse;background:#ffffff;">${rows}</table>
+      <p style="margin:16px 2px 0;color:#52698f;font-size:11px;line-height:1.6;">The website estimate is indicative only. Confirm property condition, scope, final pricing and availability before booking.</p>
     </div>`;
 
   return { subject: `Cleaning quote request: ${quote.service}`, text, html };

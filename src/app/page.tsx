@@ -49,10 +49,10 @@ export default function Home() {
           sizes="100vw"
           className="-z-20 object-cover object-center"
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#171c19]/85 via-[#171c19]/48 to-[#171c19]/10" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#082a6d]/90 via-[#0b3d91]/52 to-[#0b3d91]/8" />
         <div className="container w-full pb-9 pt-28 sm:pb-14 lg:pb-16">
           <AnimatedSection className="max-w-5xl">
-            <p className="eyebrow !text-[#d1b77f]">Calgary · Alberta</p>
+            <p className="eyebrow !text-[var(--brass-light)]">Calgary · Alberta</p>
             <h1 className="display mt-6 max-w-4xl text-[64px] leading-[.88] sm:text-[88px] lg:text-[124px]">CLEANING,<br />REFINED.</h1>
             <div className="mt-8 grid gap-7 border-t border-white/35 pt-5 md:grid-cols-[1fr_auto] md:items-end">
               <p className="max-w-xl text-sm leading-7 text-white/78 sm:text-[15px]">A more considered clean for Calgary homes, workspaces and properties. Thoughtful scope, careful detail and a finish that lets the space feel ready again.</p>
@@ -181,7 +181,7 @@ export default function Home() {
         <Image src="https://images.unsplash.com/photo-1600566753051-f0b89df2dd90?auto=format&fit=crop&w=1800&q=85" alt="Quiet, finished home interior" fill sizes="100vw" className="-z-20 object-cover object-center" />
         <div className="absolute inset-0 -z-10 bg-[#171c19]/75" />
         <div className="container">
-          <p className="eyebrow !text-[#d1b77f]">Royal Cleaning Crew · Calgary</p>
+          <p className="eyebrow !text-[var(--brass-light)]">Royal Cleaning Crew · Calgary</p>
           <h2 className="display mt-5 max-w-5xl text-5xl leading-[.9] sm:text-7xl lg:text-[100px]">YOUR SPACE.<br />OUR STANDARD.</h2>
           <div className="mt-7 flex flex-col gap-6 border-t border-white/30 pt-5 sm:flex-row sm:items-end sm:justify-between">
             <p className="max-w-lg text-sm leading-7 text-white/70">Tell us what needs attention. We’ll start with the property, the scope and the details that make the service yours.</p>
